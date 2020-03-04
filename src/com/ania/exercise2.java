@@ -35,6 +35,27 @@ class Frog{
     }
 }
 
+class Machine{
+
+    private int code;
+    private String name;
+    public Machine(){
+        System.out.println("Constructor running!");
+    }
+
+    public Machine(String name){
+        System.out.println("Constructor 2 running!");
+        this.name = name;
+    }
+
+    public Machine(String name, int code){
+        System.out.println("Constructor 3 running!");
+        this.name = name;
+        this.code = code;
+    }
+
+}
+
 public class exercise2 {
 
     public static void main(String [] args){
@@ -56,6 +77,10 @@ public class exercise2 {
 
         System.out.println(froggy.getName());
 
+        ///Machine
 
+        Machine machine1 = new Machine();
+        Machine machine2 = new Machine("Bertie");
+        Machine machine3 = new Machine("Foxy", 344);
     }
 }
