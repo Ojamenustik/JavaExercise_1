@@ -82,5 +82,31 @@ public class exercise2 {
         Machine machine1 = new Machine();
         Machine machine2 = new Machine("Bertie");
         Machine machine3 = new Machine("Foxy", 344);
+
+        //STRINGBUILDER
+
+        StringBuilder sb = new StringBuilder();
+        sb.append("Hi, my name is Sue. ");
+        sb.append("I'm not so cool. ");
+        sb.append("I like frogs and robots. ");
+
+        sb.append("\n")
+                .append("And who are you? ")
+                .append("You like frogs?");
+
+        System.out.println(sb.toString());
+
+        /////Formating
+
+        System.out.printf("Total cost: %d; Quantity is %d", 5,120);
+
+        for(int i = 0; i <=20; i++){
+            System.out.printf("%2d: %s\n", i, "some text");
+        }
+
+        System.out.printf("Total value: %.2f\n", 5.5678);
+        System.out.printf("Total value: %8.2f\n", 343.2578);
+
+
     }
 }
